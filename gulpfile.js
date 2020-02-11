@@ -70,11 +70,12 @@ function imgs() {
 //libs
 function libs() {
     return gulp.src([
-            'node_modules/jquery/dist/jquery.min.js'
+            'node_modules/jquery/dist/jquery.min.js',
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'
         ])
-        // .pipe(babel({
-        //     presets: ['@babel/env']
-        // }))
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(concat('libs.js'))
         .pipe(uglify())
         .pipe(gulp.dest(path.app.js))

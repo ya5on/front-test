@@ -8,7 +8,7 @@
         top: 0
         bottom: -180px
         z-index: -3
-        background: url(/app/img/header/main-background.webp) no-repeat
+        background: url(/app/img/header/main-background.png) no-repeat
         // background-position: top left
         content: ""
 
@@ -57,7 +57,11 @@
 
         .btn
             color: $main-color
-            border-color: $main-color
+            border: 2px solid $main-color
+            box-sizing: border-box
+            line-height: 55px
+            +lg(line-height, 45px)
+            +md(line-height, 35px)
             
             &:hover
                 background: #37204C
@@ -237,6 +241,7 @@
         background: #fff
         color: #000
         border: transparent
+        text-indent: 25px
         +lg(max-width, 240px)
         +lg(font-size, 14px)
         +lg(height, 45px)
@@ -246,13 +251,6 @@
         +md(font-size, 12px)
         +sm(border, 1px solid #000)
 
-        &::-webkit-input-placeholder 
-            padding-left: 25px
-        &::-moz-placeholder          
-            padding-left: 25px
-        &:-moz-placeholder           
-            padding-left: 25px
-        &:-ms-input-placeholder
-            padding-left: 25px
+
 
 // end main

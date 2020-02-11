@@ -1,0 +1,87 @@
+.form-block
+    margin: auto
+    width: 100%
+    max-width: 270px
+    border-radius: 5px
+    background: url(/app/img/header/modal-bg.png) no-repeat
+    padding: 40px 50px
+    position: relative
+    color: #fff
+    +sm(max-width, 210px)
+    +sm(padding, 20px 25px)
+
+    h5
+        font-size: 30px
+        line-height: 32px
+        font-weight: 900
+        margin-bottom: 10px
+        +sm(font-size, 20px)
+        +sm(line-height, 20px)
+        
+
+    p   
+        font-size: 17px
+        line-height: 24px
+        font-weight: 500
+        margin-bottom: 40px
+        +sm(font-size, 15px)
+        +sm(line-height, 15px)
+        +sm(margin-bottom, 20px)
+
+    form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        max-width: 290px
+        width: 100%
+
+        input
+            height: 55px
+            display: inline-block
+            width: 100%
+            max-width: 270px
+            font-size: 16px
+            font-weight: 500
+            border-radius: 30px
+            border: none    
+            outline: none
+            cursor: pointer
+            background: #fff
+            color: #000
+            border: transparent
+            margin-bottom: 10px
+            text-indent: 25px
+            +lg(max-width, 240px)
+            +lg(font-size, 14px)
+            +lg(height, 45px)
+            +md(height, 35px)
+            +md(margin, 5px)
+            +md(max-width, 200px)
+            +md(font-size, 12px)
+
+        .btn
+            color: #fff
+            font-weight: 700
+            border: none
+            background: linear-gradient(to right, #5B1E9D, #644BC3)
+            box-shadow: 1px 2px 7px 2px rgba(0,0,0,0.35)
+
+            &:hover
+                background: #37204C
+                border-color: #37204C
+                color: #fff
+
+.btn-close
+    width: 40px
+    height: 40px
+    position: absolute
+    top: -20px
+    right: -20px
+    background: #fff!important
+    opacity: 1
+    color: #000!important
+    border-radius: 50%
+    font-weight: 500
+    color: #7C7698!important
+
