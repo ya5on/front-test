@@ -1,0 +1,68 @@
+@import '../vendor/smart-grid/smart-grid.sass'
+@import 'fonts'
+@import 'variables'
+
+//General
++reset
+
+body
+  font: 16px MuseoSansCyrl, sans-serif
+  font-weight: 500
+  min-width: 320px
+  max-width: 1920px
+  background: #fff
+
+a
+  text-decoration: none
+
+h2 
+  font-family: Myriad Pro, sans-serif
+  font-size: 30px
+  margin-bottom: 87px
+  color: $main-color
+  text-align: center
+  font-weight: 700
+  +sm(font-size, 24px)
+
+h3 
+  font-size: 24px
+  line-height: 28px
+  margin-bottom: 37px
+  +lg(font-size, 20px)
+  +md(line-height, 18px)
+  +sm(font-size, 18px)
+
+img 
+  display: block
+  height: auto
+  max-width: 100%
+
+.container
+  +wrapper
+
+.btn
+    height: 55px
+    text-align: center
+    display: inline-block
+    width: 100%
+    max-width: 270px
+    font-size: 16px
+    font-weight: 500
+    border-radius: 30px
+    outline: none
+    cursor: pointer
+    background: transparent
+    transition: all .5s
+    +lg(max-width, 240px)
+    +lg(font-size, 14px)
+    +lg(height, 45px)
+    +md(height, 35px)
+    +md(max-width, 200px)
+    +md(font-size, 12px)
+
+.reverse
+  +sm(flex-direction, column-reverse)
+
+@import 'components/_header'
+@import 'components/_about'
+@import 'components/_services'

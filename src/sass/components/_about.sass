@@ -1,0 +1,79 @@
+.about
+
+    &__box
+        +row-flex
+        justify-content: space-between
+        margin-bottom: 30px
+
+    &__picture 
+        +col
+        +size(5)
+        +size-sm(12)
+        position: relative
+
+        img     
+            border-radius: 4px
+            +sm(margin, 0 auto)
+
+    &__text
+        +col
+        +size(6)
+        +size-sm(12)
+        display: flex
+        flex-direction: column  
+        justify-content: center
+        align-items: center
+        color: #262626
+        z-index: 3
+        +sm(text-align, center)
+
+        h3 
+            margin-bottom: 37px
+            font-weight: 900
+            margin-right: auto
+            +md(font-size, 18px)
+            +md(margin-bottom, 15px)
+            +sm(margin-top, 15px)
+            +sm(text-align, center)
+            +sm(margin-right, 0)
+        p 
+            font-size: 18px
+            line-height: 28px
+            +md(font-size, 16px)
+            +md(line-height, 20px)
+            +sm(text-align, justify)
+
+    .sub_pic
+        position: absolute
+        bottom: 30px
+        z-index: 2
+        +lg(display, none)
+
+        &--right
+            right: -100px
+
+        &--left
+            left: -100px
+
+    .sub_text
+        position: absolute
+        z-index: 1
+        font-size: 200px
+        color: #F6FAFC
+        font-weight: 900
+        line-height: 1
+        bottom: -32px
+        +lg(display, none)
+        
+    .sub_text--right
+        right: -160px
+
+    .sub_text--left
+        left: -150px
+
+    .sub_text--center
+        left: 57%
+
+    .sub_text--etika
+        right: 60%
+

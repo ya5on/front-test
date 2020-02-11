@@ -1,0 +1,130 @@
+.services
+    position: relative
+    padding-bottom: 600px
+
+    &::before 
+        position: absolute
+        z-index: -3
+        width: 100%
+        height: 100%
+        top: -190px
+        background: url(/app/img/services/services-bg.webp) no-repeat
+        
+        // background-position: top left
+        content: ""
+
+    h2
+        margin-top: 120px
+
+    &__box
+        +row-flex
+        justify-content: space-between
+        margin-bottom: 80px
+
+    &__picture 
+        +col
+        +size(5)
+        +size-sm(12)
+        position: relative
+        z-index: 2
+
+        img     
+            border-radius: 4px
+            +sm(margin, 0 auto)
+            
+
+    &__text
+        +col
+        +size(6)
+        +size-sm(12)
+        display: flex
+        flex-direction: column  
+        justify-content: center
+        align-items: center
+        color: #262626
+        z-index: 3
+
+        h3
+            font-weight: 900
+            margin-right: auto
+            +md(font-size, 18px)
+            +md(margin-bottom, 15px)
+            +sm(margin-top, 15px)
+            +sm(text-align, center)
+            +sm(margin-right, 0)
+
+        p   
+            margin-bottom: 37px
+            font-size: 18px
+            +md(font-size, 16px)
+            +md(line-height, 20px)
+            +sm(margin-bottom, 15px)
+            
+
+        h4  
+            margin-right: auto
+            font-weight: 900
+            font-size: 18px
+            line-height: 28px
+            +md(font-size, 16px)
+            +md(margin-bottom, 15px)
+            +md(line-height, 20px)
+            +sm(margin-top, 15px)
+            +sm(text-align, center)
+
+        ul
+            margin-right: auto
+            line-height: 28px
+            margin-bottom: 37px
+
+            li 
+                font-size: 18px
+                list-style-type: disc
+                list-style-position: inside
+                +md(font-size, 16px)
+                +md(line-height, 20px)
+                +sm(text-align, justify)
+
+        .btn
+            margin-right: auto
+            color: #fff
+            border-color: transparent
+            background: linear-gradient(to right,#5b1e9d,#644bc3)
+            font-size: 18px
+            font-weight: 700
+            line-height: 55px
+            box-shadow: 1px 2px 7px 2px rgba(0,0,0,0.35)
+            +lg(font-size, 14px)
+            +lg(line-height, 45px)
+            +md(height, 35px)
+            +md(line-height, 35px)
+            +md(font-size, 12px)
+
+            &:hover
+                background: #37204C
+                border-color: #37204C
+                color: #fff
+
+    .line
+        position: absolute
+        top: 50px
+        z-index: -1
+        +lg(display, none)
+
+        &--right
+            right: -32px
+
+        &--left
+            left: -30px
+
+    .square
+        position: absolute
+        z-index: -2
+        top: 160px
+        +lg(display, none)
+
+        &--right
+            right: -190px
+
+        &--left
+            left: -190px

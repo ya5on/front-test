@@ -1,0 +1,258 @@
+// main
+.header
+    padding-top: 11px
+
+    &::before 
+        position: absolute
+        width: 100%
+        top: 0
+        bottom: -180px
+        z-index: -3
+        background: url(/app/img/header/main-background.webp) no-repeat
+        // background-position: top left
+        content: ""
+
+.top-header
+    font-family: MuseoSansCyrl, sans-serif
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    color: $main-color
+    
+    &__left
+        display: flex
+        +size(6)
+        +size-md(12)
+
+        img
+            max-height: 34px
+        
+        p   
+            font-size: 16px
+            margin-left: 30px
+            font-weight: 500
+            line-height: 20px
+            +lg(font-size, 14px)
+
+    &__right
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        +size(6)
+        +size-md(12)
+        +sm(margin-top, 10px)
+        +xs(flex-direction, column)
+
+
+        .phone
+            color: $main-color
+            font-size: 24px
+            line-height: 20px
+            font-weight: 900
+            margin-right: 30px
+            +lg(font-size, 18px)
+            +xs(margin-right, 0)
+            +xs(margin-bottom, 10px)
+
+        .btn
+            color: $main-color
+            border-color: $main-color
+            
+            &:hover
+                background: #37204C
+                border-color: #37204C
+                color: #fff
+
+
+.header-content
+    display: flex   
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 24px
+    margin-bottom: 50px
+    
+
+    &__text
+        +size(8)
+        +size-sm(12)
+        +sm(margin, 0 auto)
+        
+        h1
+            font-family: MuseoSansCyrl, sans-serif
+            font-weight: 700
+            font-size: 60px
+            line-height: 60px
+            color: $main-color
+            margin-bottom: 29px
+            +lg(font-size, 45px)
+            +md(line-height, 30px)
+            +md(font-size, 35px)
+            +sm(font-size, 30px)
+            +sm(text-align, center)
+
+        h3
+            color: $main-color
+            margin-bottom: 44px
+            +md(margin-bottom, 20px)
+            +sm(text-align, center)
+
+        ul
+            display: flex
+            +sm(justify-content, center)
+            +xs(flex-wrap, wrap)
+            
+            li
+                margin-right: 50px
+                padding-top: 69px
+                position: relative
+                white-space: nowrap
+                +sm(margin-right, 20px)
+                +xs(margin, 10px)
+
+                p 
+                    color: #825447
+                    font-size: 18px
+                    line-height: 28px
+                    font-family: MuseoSansCyrl, sans-serif
+                    font-weight: 900
+                    +lg(font-size, 16px)
+                    +lg(line-height, 16px)
+                    +md(font-size, 14px)
+                    +sm(text-align, center)
+                    +xs(font-size, 12px)
+                    +xs(margin-bottom, 15px)
+
+                img
+                    position: absolute
+                    height: auto
+                    top: 0
+                    left: 0
+                    +sm(left, 50%)
+                    +sm(transform, translateX(-50%))
+                    +xs(max-width, 50px)
+                
+                
+
+    &__nav
+        display: flex
+        justify-content: flex-end
+        text-align: right
+        position: relative
+        +size(4)
+        +size-sm(12)
+        +sm(justify-content, center)
+        +sm(text-align, center)
+
+        ul
+            margin-top: 14px
+
+            li 
+                margin-bottom: 13px
+                a
+                    color: $main-color
+                    text-transform: uppercase
+                    font-size: 14px
+                    font-weight: 900
+                    transition: all .5s
+
+                    &:hover
+                        color: #7C7698
+        
+        img
+            position: absolute
+            z-index: 1
+            height: auto
+            top: -18px
+            left: -65px
+            +lg(display, none)
+
+.header-banner
+    width: 100%
+    max-width: 1245px
+    margin: 0 auto 78px
+    position: relative
+    z-index: 2
+
+    &::before
+        content: ""
+        position: absolute
+        z-index: -1
+        width: 100%
+        height: 210px
+        background-image: url(/app/img/header/banner.png)
+        background-repeat: no-repeat
+        background-position: center top
+        box-shadow: 0px 8px 18px 0px rgba(124,118,152,0.5)
+        border-radius: 5px
+        +sm(display, none)
+    
+    &__content
+        padding-top: 33px
+        padding-bottom: 33px
+        +sm(padding, 0)
+
+    h3  
+        text-align: center
+        color: #fff
+        margin-bottom: 22px
+        +sm(color, #000)
+    
+    span    
+        font-weight: 700
+
+.header-form
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +sm(flex-wrap, wrap)
+    +sm(flex-direction, column)
+
+    .btn
+        color: #fff
+        font-weight: 700
+        border: none
+        background: linear-gradient(to right, #5B1E9D, #644BC3)
+        box-shadow: 1px 2px 7px 2px rgba(0,0,0,0.35)
+        +md(margin, 5px)
+        
+
+        &:hover
+                background: #37204C
+                border-color: #37204C
+                color: #fff
+
+    input
+        height: 55px
+        display: inline-block
+        width: 100%
+        max-width: 270px
+        font-size: 16px
+        font-weight: 500
+        border-radius: 30px
+        border: none    
+        outline: none
+        cursor: pointer
+        background: #fff
+        color: #000
+        border: transparent
+        +lg(max-width, 240px)
+        +lg(font-size, 14px)
+        +lg(height, 45px)
+        +md(height, 35px)
+        +md(margin, 5px)
+        +md(max-width, 200px)
+        +md(font-size, 12px)
+        +sm(border, 1px solid #000)
+
+        &::-webkit-input-placeholder 
+            padding-left: 25px
+        &::-moz-placeholder          
+            padding-left: 25px
+        &:-moz-placeholder           
+            padding-left: 25px
+        &:-ms-input-placeholder
+            padding-left: 25px
+
+// end main
