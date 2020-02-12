@@ -22,6 +22,7 @@
     
     &__left
         display: flex
+        +xxs(flex-direction, column)
         +size(6)
         +size-md(12)
 
@@ -75,6 +76,17 @@
     justify-content: space-between
     margin-top: 24px
     margin-bottom: 50px
+    position: relative
+
+    img
+        position: absolute
+        z-index: -1
+        height: auto
+        top: -18px
+        right: 105px
+        +lg(opacity, .8)
+        +md(opacity, .5)
+        +md(right, 0)
     
 
     &__text
@@ -93,13 +105,11 @@
             +md(line-height, 30px)
             +md(font-size, 35px)
             +sm(font-size, 30px)
-            +sm(text-align, center)
 
         h3
             color: $main-color
             margin-bottom: 44px
             +md(margin-bottom, 20px)
-            +sm(text-align, center)
 
         ul
             display: flex
@@ -163,13 +173,6 @@
                     &:hover
                         color: #7C7698
         
-        img
-            position: absolute
-            z-index: 1
-            height: auto
-            top: -18px
-            left: -65px
-            +lg(display, none)
 
 .header-banner
     width: 100%
